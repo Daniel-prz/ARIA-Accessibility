@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria Accessibility</title>
+</head>
+
+<body>
+    <h1>Aria Accessibility</h1>
+    <!-- role used to define as navigation -->
+    <nav role="navigation">
+        <ul>
+            <!-- aria current used to show current page -->
+            <!-- aria disabled used to disabled link to home -->
+            <li><a aria-disabled="true" aria-current="true" href="index.html">Home</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>ARIA</h2>
+        <section>
+            <p>ARIA(Accessible Rich Internet Applications) is a term encompassing roles and attributes used
+                to make web pages and web page content more accessible to users who use screen readers.
+
+                Example:
+
+                A div, which is not a semantic element, is not identified by the browser to have any specific purpose by
+                default,
+                however, with the use of "role", the browser can identify an assigned purpose of the div.
+
+                "Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make
+                web content and
+                web applications (especially those developed with JavaScript) more accessible to people with
+                disabilities.
+
+                It supplements HTML so that interactions and widgets commonly used in applications can be passed to
+                assistive
+                technologies when there is not otherwise a mechanism. For example, ARIA enables accessible JavaScript
+                widgets, form
+                hints and error messages, live content updates, and more(MDN Web Docs - ARIA)."</p>
+        </section>
+    </main>
+
+    <aside>
+        <!-- aria label used to define interactive element 'input' -->
+        <input aria-label="Text Input" type="text">
+    </aside>
+</body>
+
+</html>
